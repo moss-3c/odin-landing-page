@@ -1,15 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
+    display: flex;
+    flex-direction: column;
     font-family: Roboto, serif;
     background-color: #1f2937;
     margin: 0;
+    align-items: center;
+    
 }
 
 .header {
     display: flex;
     align-items: end;
     margin: 24px 0;
+    width: 90%;
 }
 
 .logo {
@@ -38,16 +43,17 @@ a {
     display: flex;
     margin: 100px 0;
     gap: 36px;
+
 }
 
 .awesome-title {
-    color: #f9faf8;
     font-weight: 900;
     font-size: 48px;
+    color: #f9faf8;
 }
 .awesome-subtext {
-    color: #e5e7eb;
     font-size: 18px;
+    color: #e5e7eb;
 }
 
 .awesome-left, .temp-img {
@@ -63,7 +69,7 @@ a {
     align-items: center;
 }
 
-button {
+.signup {
     background-color: #3882f6;
     color: white;
     padding: 9px 36px;
@@ -74,7 +80,7 @@ button {
     border-radius: 8px;
 }
 
-.info-title {
+.info-title { 
     display: flex;
     justify-content: center;
     color: #1f2937;
@@ -107,11 +113,58 @@ button {
     margin-top: 20px;
 }
 
+.quote-container{
+    display: flex;
+    flex-direction: column;
+    margin: 72px 100px;
+    gap: 16px;
+}
 
-.header, .awesome-container, .info-container {
+.quote {
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.quote-author{
+    display: flex;
+    justify-content: end;
+    font-weight: bold;
+}
+
+.signup-container {
+    display: flex;
+    background-color: #3882f6;
+    color: white;
+    border-radius: 8px;
+    margin: 100px 100px;
+    gap: 16px;
+    align-items: center;
+    flex: 1;
+    justify-content: space-evenly;
+}
+
+.signup-left {
+    padding: 40px 0;
+}
+
+.signup-bold {
+    font-weight: bold;
+    font-size: large;
+}
+
+.signup-subtext {
+    font-weight: 300;
+}
+.bordered {
+    border: white 2px solid;
+
+}
+
+/* **************** */
+.header, .awesome-container, .info-container, .quote-container, .signup-container {
     max-width: 1000px;
     padding: 0 50px;
-    /* 10vw half-screen, 25vw full-screen */
 }
 
 .background {
@@ -122,4 +175,8 @@ button {
 
 .white {
     background-color: white;
+}
+
+.gray {
+    background-color: #e5e7eb;
 }
