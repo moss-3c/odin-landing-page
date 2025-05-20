@@ -97,7 +97,7 @@ a {
 
 .info-tile {
     max-width: 150px;
-    padding-bottom: 65px;
+    padding-bottom: 120px;
 }
 
 .info-img {
@@ -161,10 +161,21 @@ a {
 
 }
 
+.footer {
+    color: white;
+    margin: 25px 0;
+}
+
 /* **************** */
 .header, .awesome-container, .info-container, .quote-container, .signup-container {
     max-width: 1000px;
-    padding: 0 50px;
+    padding: 0 50px; 
+    /* padding keep elements away from viewport edge when narrowing */
+}
+
+.signup-container {
+    max-width: 700px;
+    /* looks bad when too stretched */
 }
 
 .background {
